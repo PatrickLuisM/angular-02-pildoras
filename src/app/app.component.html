@@ -1,0 +1,19 @@
+<h1 style="text-align:center">{{ titulo }}</h1>
+
+<form action="">
+  <input type="text" name="nombre" [(ngModel)]="nombre" /><br />
+  <input type="text" name="apellido" [(ngModel)]="apellido" /><br />
+
+  <input type="submit" value="Registrar" (click)="registrarUsuario()" />
+</form>
+
+<br />
+<p *ngIf="registrado; else sinRegistrar">{{ mensaje }}</p>
+
+<ul *ngFor="let blog of blogs">
+  <li>{{ blog }}</li>
+</ul>
+
+<ng-template #sinRegistrar>
+  <p>Nadie registrado</p>
+</ng-template>
