@@ -11,6 +11,7 @@ export class AppComponent {
   nombre = '';
   apellido = '';
   blogs = ['Titulo1', 'Titulo2', 'Titulo3', 'Titulo4', 'Titulo5', 'Titulo6'];
+  cargo: string = '';
   registrado = false;
 
   registrarUsuario() {

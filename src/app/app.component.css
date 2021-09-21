@@ -1,3 +1,5 @@
-p {
-  font-family: Lato;
+.paraDirectores {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
 }
